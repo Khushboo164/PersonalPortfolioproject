@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushboo Pirwani - Portfolio</title>
+    <meta name="description" content="Portfolio of Khushboo Pirwani - BCA Student & Aspiring Front-End Developer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Khushboo Pirwani</h1>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#home" class="nav-link-mobile">Home</a>
+                <a href="#about" class="nav-link-mobile">About</a>
+                <a href="#projects" class="nav-link-mobile">Projects</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">
+                        <span class="wave">👋</span>
+                        <p>Hello!</p>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        I'm <span class="gradient-text">Khushboo Pirwani</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        1st Year BCA Student | Aspiring Front-End Developer
+                    </p>
+
+                    <p class="hero-description">
+                        Passionate about creating beautiful, responsive web interfaces and 
+                        eager to work on real-world projects. I combine creativity with 
+                        technical skills to build engaging digital experiences.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            Let's Connect
+                            <span class="btn-icon">→</span>
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            Download CV
+                            <span class="btn-icon">↓</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-ring">
+                            <div class="profile-inner">
+                                <img src="finalprofilepicture.jpg" alt="Khushboo Pirwani" class="profile-img">
+                            </div>
+                        </div>
+                        <div class="floating-element element-1"></div>
+                        <div class="floating-element element-2"></div>
+                        <div class="floating-element element-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>I'm a passionate BCA student with a love for creating digital experiences. 
+                Currently focused on mastering frontend technologies and building my portfolio 
+                with real-world projects.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card" data-color="blue">
+                    <div class="skill-icon">💻</div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React, and modern frameworks</p>
+                </div>
+                <div class="skill-card" data-color="purple">
+                    <div class="skill-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating beautiful and intuitive user interfaces</p>
+                </div>
+                <div class="skill-card" data-color="orange">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Performance</h3>
+                    <p>Optimizing for speed and user experience</p>
+                </div>
+                <div class="skill-card" data-color="pink">
+                    <div class="skill-icon">❤️</div>
+                    <h3>Passion</h3>
+                    <p>Dedicated to continuous learning and improvement</p>
+                </div>
+            </div>
+
+            <div class="journey-card">
+                <h3>My Journey</h3>
+                <p>As a first-year BCA student, I'm building my foundation in computer applications 
+                while specializing in frontend development. I believe in the power of beautiful, 
+                functional web interfaces to solve real problems and create meaningful connections 
+                between users and technology. Every project is an opportunity to learn something new 
+                and push the boundaries of what's possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <p>Here are some of the projects I've worked on. Each project represents a learning journey 
+                and showcases different aspects of my development skills.</p>
+            </div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Application</button>
+                <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+                <button class="filter-btn" data-filter="system">System</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Quiz-App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <span class="icon">📁</span>
+                                </a>
+                                <a href="https://khushboo164.github.io/quiz-app/" class="project-link" aria-label="View live demo">
+                                    <span class="icon">🔗</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge" data-color="blue">
+                            <span class="badge-icon">💻</span>
+                            <span>Web Application</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Quiz-App</h3>
+                        <p>A fun and interactive quiz game that tests your knowledge through multiple-choice questions across various topics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="portfolio">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="MYWebpage">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <span class="icon">📁</span>
+                                </a>
+                                <a href="https://khushboo164.github.io/MyWebpage/" class="project-link" aria-label="View live demo">
+                                    <span class="icon">🔗</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge" data-color="purple">
+                            <span class="badge-icon">🎨</span>
+                            <span>Portfolio</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MYWebpage</h3>
+                        <p>A personal portfolio website showcasing projects, skills, and career goals in a clean and responsive layout.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="project-card" data-category="system">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/259027/pexels-photo-259027.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bank Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View source code">
+                                    <span class="icon">📁</span>
+                                </a>
+                                <a href="https://github.com/Khushboo164/BankManagementSystemInC-" class="project-link" aria-label="View live demo">
+                                    <span class="icon">🔗</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge" data-color="orange">
+                            <span class="badge-icon">🗄️</span>
+                            <span>System</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bank Management System</h3>
+                        <p>A C-based console application for managing bank accounts and transactions with secure user authentication.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C Programming</span>
+                            <span class="tech-tag">File Handling</span>
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">Console Application</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="cta-card">
+                    <h3>Interested in Working Together?</h3>
+                    <p>I'm always open to discussing new opportunities and exciting projects.</p>
+                    <a href="#contact" class="btn btn-primary">
+                        Get In Touch
+                        <span class="btn-icon">🔗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>I'm always excited to connect with fellow developers, potential collaborators, 
+                or anyone interested in discussing technology and opportunities.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Let's Connect</h3>
+                        <p>Whether you have a project in mind, want to collaborate, or just want to say hello, 
+                        I'd love to hear from you. Feel free to reach out through any of the channels below.</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="mailto:khushboopirwani@gmail.com" class="social-link" data-color="blue">
+                            <div class="social-icon">📧</div>
+                            <div class="social-content">
+                                <h4>Email</h4>
+                                <p>Connect with me via Email</p>
+                                <p>khushboopirwani@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Khushboo164" class="social-link" data-color="gray">
+                            <div class="social-icon">📁</div>
+                            <div class="social-content">
+                                <h4>GitHub</h4>
+                                <p>Connect with me on GitHub</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khushboo-pirwani-6085b133b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" data-color="blue">
+                            <div class="social-icon">💼</div>
+                            <div class="social-content">
+                                <h4>LinkedIn</h4>
+                                <p>Connect with me on LinkedIn</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="availability-status">
+                        <div class="status-indicator"></div>
+                        <div class="status-content">
+                            <h4>Available for Projects</h4>
+                            <p>I'm currently open to new opportunities and exciting projects. Let's create something amazing together!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <span class="form-icon">💬</span>
+                        <h3>Send Message</h3>
+                    </div>
+
+                    <div id="successMessage" class="success-message">
+                        <span class="success-icon">✅</span>
+                        <p>Message sent successfully! I'll get back to you soon.</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required rows="6" placeholder="Tell me about your project or just say hello..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">📤</span>
+                            <span class="btn-loading">⏳ Sending...</span>
+                        </button>
+                    </form>
+
+                    <div class="form-footer">
+                        <p>I typically respond within 24 hours. Looking forward to hearing from you!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Khushboo Pirwani</h3>
+                    <p>BCA Student & Aspiring Front-End Developer passionate about creating 
+                    beautiful and functional web experiences.</p>
+                    <div class="footer-love">
+                        <span>Made with</span>
+                        <span class="heart">❤️</span>
+                        <span>and lots of coffee ☕</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact-info">
+                        <p>khushboopirwani@email.com</p>
+                        <p>+91 98xxxxxxx0</p>
+                        <p>Mumbai, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Khushboo Pirwani. All rights reserved.</p>
+                <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+                    <span class="scroll-icon">↑</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
